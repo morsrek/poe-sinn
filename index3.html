@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>morsi</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <script>
+        function srec(obj) { obj.res.value = (obj.num1.value * 2500) + (obj.num2.value * 5600) }
+        function srec(obj) { obj.res1.value = obj.num3.value * (obj.num3.value * 1200) }
+    </script>
+    <nav class="verh">
+        <ul id="na" class="list">
+            <li><a title="Одежда" href="index1.html"><b>ОДЕЖДА</b></a></li>
+            <li>
+                <a href="#"><b>КОЛЛЕКЦИИ</b></a>
+                <ul class="menu">
+                    <li><a href="index2.1.html">ARCHIVE</a></li>
+                    <li><a href="index2.2.html">AUTOMATIC</a></li>
+                    <li><a href="index2.3.html">CHERCH, ANGEL</a></li>
+                    <li><a href="index2.4.html">CLASP</a></li>
+                    <li class="bez"><a href="index2.5.html">FACES</a></li>
+                </ul>
+            </li>
+            <li><a title="Заказ дизайнов, а также свободные(бесплатные) дизайны" href="index3.html"><b>ДИЗАЙНЫ</b></a></li>
+            <li><a title="О нас" href="index4.html"><b>О БРЕНДЕ</b></a></li>
+        </ul>
+        <a href="index.html">
+            <div class="block znak">
+                <img title="Вернуться на главную страницу" src="static/images/знаки/222.png">
+            </div>
+        </a>
+        <a href="#zatemnenie" id="main">
+            <div class="block korzina">
+                <img title="Купленные вещи" src="static/images/знаки/444.png">
+            </div>
+        </a>
+        <div id="zatemnenie">
+            <div id="okno">
+                <FORM name="form1">
+                    <a href="#" class="close">
+                        <img title="Закрыть" class="clos" src="static/images/знаки/666.png">
+                    </a>
+                    <p class="zakaz"><b>Ваш заказ:</b></p>
+                    <div class=" korzina-veshi">
+                        <div class="k-vesh1">
+                            <img class="korzina-vesh1" src="static/images/корзина/1.png">
+                            <div class="text-korzina">
+                                <p class="t1"><b><i>"CHERCH"</i></b> T-SHIRT BLACK</p>
+                                <p class="t2"><b>2 500 ₽</b></p>
+                                <p class="t3"><b>Размер: М</b></p>
+                                <p class="t4">Кол-во: <input class="knopka" type="text" name="num1" onChange="srec(form1)"></p>
+                            </div>
+                        </div>
+                        <div class="k-vesh2">
+                            <img class="korzina-vesh1" src="static/images/корзина/2.png">
+                            <div class="text-korzina">
+                                <p class="t1"><b><i>"ARCHIVE"</i></b> SWEATER BLACK</p>
+                                <p class="t2"><b>5 600 ₽</b></p>
+                                <p class="t3"><b>Размер: L</b></p>
+                                <p class="t4">Кол-во: <input class="knopka" type="text" name="num2" onChange="srec(form1)"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="t5">Сумма: <input class="knopka2" type="text" size=7 name="res">₽</p>
+                </FORM>
+                <form class="contact_form" action="" method="post" name="contact_form">
+                    <ul>
+                        <li class="l1">
+                            <label for="name">Получатель (ФИО полностью)</label>
+                        </li>
+                        <li class="l2">
+                            <input type="text" name="name" placeholder="Иван Иванов" required />
+                        </li>
+                        <li class="l3">
+                            <label for="email">E-mail</label>
+                        </li>
+                        <li class="l4">
+                            <input type="email" name="email" placeholder="ivanov@gmail.ru" required />
+                            <span class="form_hint">Правильный формат "name@something.com"</span>
+                        </li>
+                        <li class="l5">
+                            <button class="submit" type="submit">Перейти к оплате</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <p class="text-d"><b>СВОБОДНЫЕ ДИЗАЙНЫ</b></p>
+    <div class="veshid">
+        <div class="blocki vesh">
+            <img class="vesh" src="static/images/вещи/дизайн/1.png">
+            <p>HOODIE</p>
+        </div>
+        <div class="blocki vesh1">
+            <img class="vesh" src="static/images/вещи/дизайн/2.png">
+            <p>SWEATER</p>
+        </div>
+        <div class="blocki vesh2">
+            <img class="vesh" src="static/images/вещи/дизайн/3.png">
+            <p>SWEATER</p>
+        </div>
+        <div class="blocki vesh3">
+            <img class="vesh" src="static/images/вещи/дизайн/4.png">
+            <p>T-SHIRT</p>
+        </div>
+    </div>
+    <div class="veshi1d">
+        <div class="blocki vesh">
+            <img class="vesh" src="static/images/вещи/дизайн/5.png">
+            <p>HOODIE</p>
+        </div>
+        <div class="blocki vesh1">
+            <img class="vesh" src="static/images/вещи/дизайн/6.png">
+            <p>LONGSLEEVE</p>
+        </div>
+        <div class="blocki vesh2">
+            <img class="vesh" src="static/images/вещи/дизайн/7.png">
+            <p>SWEATER</p>
+        </div>
+        <div class="blocki vesh3">
+            <img class="vesh" src="static/images/вещи/дизайн/8.png">
+            <p>LONGSLEEVE</p>
+        </div>
+    </div>
+    <p class="text-dz"><u>Заказ дизайна</u></p>
+    <p class="text-dz1">Наше сообшество по изготовление и производству, а также продаже одежды, предостваляет услуги дизайнера.</p>
+    <p class="text-dz1">Для заказа сообственного дизайна вы можете обратиться в поддержку, написав в личное сообщения сообщества. (Телеграм/Инстаграм/Вконтакте)</p>
+    <p class="text-dz1">Вы также можете расчитать сколько будет стоить ваш заказ. Для этого воспользуйтесь ниже представленными данными.</p>
+    <form name="form2">
+        <div class="text-dz22">
+            <p class="text-dz2">Сколько деталей в дизайне: <input class="knopka" type="text" name="num3" onChange="srec(form2)"></p>
+            <p class="text-dz3">Сумма: <input class="knopka2" type="text" size=7 name="res1">₽</p>
+        </div>
+    </form>
+    <nav class="niz">
+        <div class="razdel">
+            <a href="index.html">
+                <div class="nizi">
+                    <img class="nizi" src="static/images/знаки/222a.png">
+                </div>
+            </a>
+            <p class="nizt">poe sin. © 2023</p>
+        </div>
+    </nav>
+</body>
+</html>
